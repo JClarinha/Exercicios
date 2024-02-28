@@ -55,6 +55,6 @@ static float ConvertionToCelsius(float far1)
     string far = Console.ReadLine();
     float far1 = float.Parse(far);
     Console.WriteLine(ConvertionToCelsius(far1) + " Cº");
-//Concluido
+// Concluido 
 
 
