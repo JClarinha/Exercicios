@@ -12,3 +12,4 @@ C:\Users\joaoc\Desktop\Rumos\Exercicios\obj\Debug\net8.0\refint\Exercicios.dll
 C:\Users\joaoc\Desktop\Rumos\Exercicios\obj\Debug\net8.0\Exercicios.pdb
 C:\Users\joaoc\Desktop\Rumos\Exercicios\obj\Debug\net8.0\Exercicios.genruntimeconfig.cache
 C:\Users\joaoc\Desktop\Rumos\Exercicios\obj\Debug\net8.0\ref\Exercicios.dll
+C:\Users\joaoc\Desktop\Rumos\Exercicios\obj\Debug\net8.0\Exercicios.sourcelink.json

@@ -1,6 +1,8 @@
 ﻿//Exercico 1!
 
 
+using System.Reflection;
+
 static int GetYear()
 {
 string CurrentYear = DateTime.Now.ToString("yyyy");
@@ -54,7 +56,35 @@ static float ConvertionToCelsius(float far1)
     Console.Write("Escreva uma temperatura em Fahrenheit: ");
     string far = Console.ReadLine();
     float far1 = float.Parse(far);
-    Console.WriteLine(ConvertionToCelsius(far1) + " Cº");
+    Console.WriteLine(far1 + "f = " + ConvertionToCelsius(far1) + " Cº");
 // Concluido 
 
 
+//Exercicio 4
+
+static void NotaFinal()
+{
+    const float p1 = (65/100f);
+    const float p2 = (15/100f);
+    const float p3 = (20/100f);
+    float t1;
+    float t2;
+    float tr1;
+    float tr2;
+    float tf;
+    float nf;
+    Console.WriteLine("Qual foi a nota do primeiro teste? ");
+    t1 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Qual foi a nota do Segundo  teste? ");
+    t2 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Qual foi a nota do primeiro trabalho? ");
+    tr1 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Qual foi a nota do segundo trabalho? ");
+    tr2 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Qual foi a nota do trabalho final? ");
+    tf = float.Parse(Console.ReadLine());
+
+    nf = p1*((t1+t2)/2) + p2*((tr1+tr2)/2) + p3 * tf;
+    System.Console.WriteLine("A nota final é de: " + nf + " Valores!");
+}   
+NotaFinal();
