@@ -98,6 +98,9 @@ static void NotaFinal()
 
 static void Menu()
 {
+    string y;
+    do
+    {
     System.Console.WriteLine();
     System.Console.WriteLine("******************** MENU ********************");
     System.Console.WriteLine();
@@ -107,8 +110,12 @@ static void Menu()
     System.Console.WriteLine("2 - Fahrenheit");
     System.Console.WriteLine("3 - Nota Final");
     System.Console.WriteLine("4 - Câmbio");
+    System.Console.WriteLine("5 - Numeros");
+    System.Console.WriteLine("6 - Ao contrário");
+    System.Console.WriteLine();
 
     string x = System.Console.ReadLine();
+    System.Console.WriteLine();
 
     switch (x)
     {
@@ -132,11 +139,22 @@ static void Menu()
         Câmbio();
         break;
 
+        case "5":
+        Numeros();
+        break;
+
+        case "6":
+        Backwards();
+        break;
+
         default:
         System.Console.WriteLine("Ecolha uma opção válida!");
         break;
     }
-    
+    System.Console.WriteLine("Deseja sair do programa? (s/n)");
+    y = System.Console.ReadLine();
+    }
+    while (y == "n");
 
 }
 
@@ -187,4 +205,41 @@ static void Câmbio()
 
     }
     //Câmbio();
+}
+
+//Concluido
+
+//Exercicio 6
+static void Numeros()
+{
+
+float number;
+float totalnumber = 0;
+int count = 0; 
+
+do
+{
+    System.Console.WriteLine("Introduza um número: ");
+    number = float.Parse(System.Console.ReadLine());
+    count ++;
+    totalnumber = totalnumber + number;
+
+} while (number != 0);
+
+System.Console.WriteLine("O total de numeros introduzidos é de: " + (count - 1));
+System.Console.WriteLine("A soma de todos os numero introduzidos é: " + totalnumber);
+System.Console.WriteLine("A média dos números introduzidos é de: " + (totalnumber/(count - 1)));
+}
+//Numeros()
+
+//Concluido
+
+//Exercicio 7
+
+static void Backwards()
+{
+    for (int i = 100; i > 0; i-- )
+    {
+       System.Console.WriteLine(i); 
+    }
 }
