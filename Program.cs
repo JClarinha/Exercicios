@@ -112,6 +112,7 @@ static void Menu()
     System.Console.WriteLine("4 - Câmbio");
     System.Console.WriteLine("5 - Numeros");
     System.Console.WriteLine("6 - Ao contrário");
+    System.Console.WriteLine("7 - Arrays");
     System.Console.WriteLine();
 
     string x = System.Console.ReadLine();
@@ -145,6 +146,10 @@ static void Menu()
 
         case "6":
         Backwards();
+        break;
+
+        case "7":
+        Arrays();
         break;
 
         default:
@@ -243,3 +248,28 @@ static void Backwards()
        System.Console.WriteLine(i); 
     }
 }
+
+static void Arrays()
+{
+    float a;
+    float [] arrays = new float [10];
+
+    for (int i = 0; i < 10; i++)
+    {
+        System.Console.WriteLine("Introduza um valor!");
+        a = float.Parse(System.Console.ReadLine());
+        arrays [i] = a;
+
+    }
+
+    System.Console.WriteLine();
+
+    for (int j = 9; j >= 0; j--)
+    {
+        System.Console.WriteLine(arrays[j]);
+    }
+    
+    
+}
+
+//Arrays();
